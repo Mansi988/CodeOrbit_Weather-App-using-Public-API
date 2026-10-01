@@ -1,0 +1,147 @@
+/* Page background looks like a blue sky */
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: Arial, sans-serif;
+  color: white;
+  background: linear-gradient(to bottom, #4a77c4, #93b5e1);
+}
+
+.weather-app {
+  width: 340px;
+  padding: 25px 20px;
+}
+
+/* Search bar */
+.search-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.25);
+  color: white;
+  font-size: 14px;
+}
+
+.search-bar input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.search-bar button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  cursor: pointer;
+}
+
+/* Current weather section (city name + temperature) */
+.top-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.top-section h1 {
+  font-size: 32px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.top-section p {
+  font-size: 18px;
+  margin: 5px 0 0;
+}
+
+/* Frosted glass card, used for both hourly and daily forecast */
+.glass-card {
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.glass-card h3 {
+  margin: 0 0 12px;
+  font-size: 13px;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+}
+
+/* Hourly forecast row */
+.hourly-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hour-item {
+  text-align: center;
+  font-size: 13px;
+}
+
+.hour-item .icon {
+  font-size: 22px;
+  margin: 6px 0;
+}
+
+/* Daily forecast rows */
+.daily-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.daily-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.day-name {
+  width: 70px;
+}
+
+.day-icon {
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+}
+
+.precip {
+  width: 40px;
+  font-size: 12px;
+  color: #bcdfff;
+  text-align: center;
+}
+
+.temp-range {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bar {
+  width: 60px;
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(to right, #ffd27f, #ff5f5f);
+}
+
+.error {
+  text-align: center;
+  color: #ffcccc;
+  font-size: 13px;
+  margin-top: 10px;
+}

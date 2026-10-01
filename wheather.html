@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+  <div class="weather-app">
+
+    <!-- Search bar to enter a city -->
+    <div class="search-bar">
+      <input type="text" id="cityInput" placeholder="Search city">
+      <button onclick="getWeather()">Search</button>
+    </div>
+
+    <!-- Current weather -->
+    <div class="top-section">
+      <h1 id="cityName">--</h1>
+      <p id="currentTemp"></p>
+    </div>
+
+    <!-- Hourly forecast card -->
+    <div class="glass-card">
+      <h3>Hourly Forecast</h3>
+      <div class="hourly-list" id="hourlyList"></div>
+    </div>
+
+    <!-- Daily forecast card -->
+    <div class="glass-card">
+      <h3>Daily Forecast</h3>
+      <div class="daily-list" id="dailyList"></div>
+    </div>
+
+    <p id="error" class="error"></p>
+  </div>
+
+  <script src="logic.js"></script>
+</body>
+</html>
